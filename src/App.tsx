@@ -706,14 +706,8 @@ function ContactsPage() {
     <AnimatedPage>
       <section id="contacts-hero" data-spy-section data-spy-label="контакты" className="relative scroll-mt-28 pb-12 pt-32">
         <div className="mx-auto grid max-w-7xl items-stretch gap-8 px-4 py-16 sm:px-6 lg:grid-cols-[0.88fr_1.12fr] lg:px-8">
-          <div className="glass-card flex h-full flex-col gap-5 rounded-[2rem] border p-5 sm:p-6">
-            <div>
-              <Badge variant="outline" className="border-primary/35 bg-primary/10 text-primary">
-                контакты
-              </Badge>
-              <h1 className="mt-5 text-4xl font-semibold leading-tight sm:text-5xl">контакты</h1>
-            </div>
-            <div className="grid flex-1 auto-rows-fr gap-3">
+          <div className="glass-card flex h-full min-h-[30rem] flex-col rounded-[2rem] border p-5 sm:p-6">
+            <div className="grid flex-1 auto-rows-fr gap-4">
               <ContactLine icon={<Building2Icon />} label="локация" value="Ингушетия, ул. Сулейменова, 41" />
               <PhoneContactGroup />
               <ContactLine
@@ -1175,8 +1169,8 @@ function ContactLine({
   href?: string
 }) {
   const content = (
-    <div className="flex h-full min-h-[5.25rem] items-center gap-4 rounded-2xl border border-border/70 bg-background/35 px-5 py-4">
-      <span className="flex size-11 items-center justify-center rounded-2xl bg-primary/15 text-primary">
+    <div className="flex h-full min-h-[6.5rem] items-center gap-5 rounded-2xl border border-border/70 bg-background/35 px-6 py-5">
+      <span className="flex size-12 items-center justify-center rounded-2xl bg-primary/15 text-primary">
         {icon}
       </span>
       <span className="flex flex-col gap-1">
@@ -1199,9 +1193,9 @@ function ContactLine({
 
 function PhoneContactGroup() {
   return (
-    <div className="h-full min-h-[5.25rem] rounded-2xl border border-border/70 bg-background/35 px-5 py-4">
-      <div className="flex h-full items-center gap-4">
-        <span className="flex size-11 shrink-0 items-center justify-center rounded-2xl bg-primary/15 text-primary">
+    <div className="h-full min-h-[6.5rem] rounded-2xl border border-border/70 bg-background/35 px-6 py-5">
+      <div className="flex h-full items-center gap-5">
+        <span className="flex size-12 shrink-0 items-center justify-center rounded-2xl bg-primary/15 text-primary">
           <PhoneCallIcon />
         </span>
         <div className="grid flex-1 items-center gap-4 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
