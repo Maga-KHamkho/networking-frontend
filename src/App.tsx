@@ -707,6 +707,9 @@ function ContactsPage() {
       <section id="contacts-hero" data-spy-section data-spy-label="контакты" className="relative scroll-mt-28 pb-12 pt-32">
         <div className="mx-auto grid max-w-7xl items-stretch gap-8 px-4 py-16 sm:px-6 lg:grid-cols-[0.88fr_1.12fr] lg:px-8">
           <div className="glass-card flex h-full min-h-[30rem] flex-col rounded-[2rem] border p-5 sm:p-6">
+            <Badge variant="outline" className="w-fit border-primary/35 bg-primary/10 text-primary">
+              контакты
+            </Badge>
             <div className="grid flex-1 auto-rows-fr gap-4">
               <ContactLine icon={<Building2Icon />} label="локация" value="Ингушетия, ул. Сулейменова, 41" />
               <PhoneContactGroup />
